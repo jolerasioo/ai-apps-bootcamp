@@ -20,4 +20,27 @@ For the Apps team, understanding these aspects of Prompt Flow is crucial. It's n
 
 ## 1. Refresher: Create and run an evaluation flow on the AI Studio PF UI
 
-Following [these steps](https://learn.microsoft.com/en-us/azure/ai-studio/tutorials/deploy-copilot-ai-studio)
+During the general track of the AI Attached Bootcamp, you've learned about Azure Prompt Flow via the UI on AI Studio. You've convered the key aspects of it via the UI - development, evaluation, and high-level deployment. Please, refer to those recodings if you need a refresher.
+
+Some questions to reflect or debate:
+- What is PF? What's its value?
+- What are the key stages of LLMOps? (development, evaluation, testing and deployment)
+- What setbacks do you think user may encounter taking apps to production? Any counter arguments?
+- How do you think PF fits in the overall AI App development from a software engineering perspective?
+[E2E Prompt FLow UI guidance](https://learn.microsoft.com/en-us/azure/ai-studio/tutorials/deploy-copilot-ai-studio).
+
+## 2. Managing Prompt Flow programatically: SDK evaluation focus
+We've seen that prompt flow is a collaboration tool, allowing to use version control and git repos for collaboration, enabling both local (several IDEs work, but VSCode is recommended for its PF extention) and AI Studio development. Today, we're going to focus on how to configure and customize evaluation via code with the Prompt Flow SDK, allowing us to go a bit further than what the UI allows us. While it's true that most use cases will be covered by the UI configuration, some teams may want to take things further and hence the value of the PF SDK. By creating these evaluation flows programatically, we can address other concerns necessary in the LLMOps workload. Once these evaluations are created, we will explore how to run them during Week 8 as part of our CI/CD pipelines as well as testing and deployment, painting the E2E LLMOps SDLC, where Apps can add great value.
+
+We will be following [this MS Learn Doc](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/flow-evaluate-sdk).
+
+Content:
+1. Getting started
+2. Built-in evaluators
+3. Composite evaluators
+4. Custom evaluators
+5. Evaluate on test dataset using evaluate()
+6. Evaluate on a target
+7. Related content
+
+
